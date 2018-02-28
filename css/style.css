@@ -869,6 +869,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 2px;
 }
 
+#rankings .icon i {
+  color: #50d8af;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+#services .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
