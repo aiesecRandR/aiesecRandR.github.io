@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #0c2e8a;
+  background: #444;
   color: #fff;
 }
 
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: #444;
   line-height: 1;
   display: inline-block;
 }
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: #444;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
@@ -219,13 +219,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: #444;
+  border: 2px solid #444;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #444;
 }
 
 #intro .intro-content .btn-projects {
@@ -506,7 +506,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h2 {
   font-size: 32px;
-  color: #0c2e8a;
+  color: #444;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -561,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: #444;
   font-weight: 700;
   font-size: 36px;
   font-family: "Raleway", sans-serif;
@@ -638,7 +638,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
+  background: #444;
   background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -877,7 +877,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 34px;
 }
 #services .icon i:before {
-  background: #0c2e8a;
+  background: #444;
   background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -1123,5 +1123,5 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .credits a {
-  color: #0c2e8a;
+  color: #444;
 }
