@@ -130,7 +130,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  $(".rankings-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
