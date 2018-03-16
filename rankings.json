@@ -1,0 +1,32 @@
+{
+  "marcom": [
+    ["Harshita", "Maulik", "Hirra", "Hendrick", "Samarth"],
+    [40, 0, 0, 0, 0]
+  ],
+
+  "ogv": [
+    ["Abdallah", "Duaa", "Sabrina", "Kate", "Daniyal"],
+    [26, 25, 10, 3, 0]
+  ],
+
+  "ogt": [
+    ["chelsey", "fareedah", "mia", "abdallah", "deek", "lucky"],
+    [16, 13, 11, 11, 5, 0]
+  ],
+
+  "igt": [
+    ["darshan", "jacqueline", "rachel", "george", "jessa", "rhythm", "tomiwa"],
+    [100, 100, 60, 60, 40, 10, 0]
+  ],
+
+  "finance": [
+    ["grace", "kimmy", "gurpreet"],
+    [105, 85, 85]
+  ],
+
+  "tm": [
+    ["hera", "keith", "mariam", "daryl"],
+    [0, 0, 0, 0]
+  ]
+
+}
