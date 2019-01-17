@@ -29,6 +29,10 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- bingo library Files -->
+    <link href="css/bingo.css" rel="stylesheet">
+    <script src="js/bingo.js"></script>
+
     <!-- =======================================================
       Theme Name: Reveal
       Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
@@ -142,177 +146,84 @@
     <!--==========================
       Rankings Section
     ============================-->
-    <script>
-      var rankings;
-      $.get("rankings.json", function(json){
-        rankings = json;
-      });
-
-    </script>
 
     <section id="rankings" class="wow fadeInUp">
         <div class="container">
             <div class="section-header">
-                <h2>Rankings</h2>
+                <h2>Game</h2>
             </div>
-            <div class="owl-carousel rankings-carousel">
 
-                <!-- Finance -->
-                <div class="ranking-item">
-                    <!-- <p> -->
-                    <!-- <img src="img/quote-sign-left.png" class="quote-sign-left" alt=""> -->
-                    <!-- Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. -->
-                    <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
-                    <!-- </p> -->
-                    <div class="icon"><i class="fa fa-bar-chart"></i></div>
-                    <h3>Finance</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Grace</a><br/>
-                            <a>Kimmy</a><br/>
-                            <a>Gurpreet</a><br/>
-                        </div>
+            <p>
+            <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+            A surprise image is hidden inside the puzzle. You may only find out
+            a section of the image when you complete the task for that
+            particular section.
+            <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
 
-                        <div class="flex:1;">
-                            <a>105pts</a><br/>
-                            <a>85pts</a><br/>
-                            <a>85pts</a><br/>
-                        </div>
-                    </div>
-                </div>
+        <div class="bingo">
+            <!-- first row -->
+            <h2 style="text-align:center;">-</h2>
+            <h2 style="text-align:center;">IGT</h2>
+            <h2 style="text-align:center;">OGV</h2>
+            <h2 style="text-align:center;">OGET</h2>
+            <h2 style="text-align:center;">MARCOM</h2>
+            <h2 style="text-align:center;">TM</h2>
+            <h2 style="text-align:center;">FINANCE</h2>
 
-                <!-- TM -->
-                <div class="ranking-item">
-                    <div class="icon"><i class="fa fa-child"></i></div>
-                    <h3>TM</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Hera</a><br/>
-                            <a>Keith</a><br/>
-                            <a>Mariam</a><br/>
-                            <a>Daryl</a><br/>
-                        </div>
 
-                        <div class="flex:1;">
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                        </div>
-                    </div>
-                </div>
+            <h2 style="text-align:center;">IGT</h2>
+            <script>createCard("10 Sales Meeting")</script>
+            <script>createCard("10 Classroom Talks")</script>
+            <script>createCard("10 Classroom Talks")</script>
+            <script>createCard("Hangout")</script>
+            <script>createCard("Intern Social")</script>
+            <script>createCard("Social Event")</script>
 
-                <!-- Marcom -->
-                <div class="ranking-item">
-                    <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-                    <h3>MarCOM</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Harshita</a><br/>
-                            <a>Maulik</a><br/>
-                            <a>Hirra</a><br/>
-                            <a>Hendrick</a><br/>
-                            <a>Samarth</a><br/>
-                        </div>
+            <h2 style="text-align:center;">OGV</h2>
+            <script>createCard("10 Hour Boothing")</script>
+            <script>createCard("10 Approvals")</script>
+            <script>createCard("20 Consultations")</script>
+            <script>createCard("10 Hour Boothing")</script>
+            <script>createCard("Hangout")</script>
+            <script>createCard("4 Hour Boothing")</script>
 
-                        <div class="flex:1;">
-                            <a>40pts</a><br/>
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                            <a>0pts</a><br/>
-                        </div>
-                    </div>
-                </div>
+            <h2 style="text-align:center;">OGET</h2>
+            <script>createCard("Training & Simulation")</script>
+            <script>createCard("10 Hour Boothing")</script>
+            <script>createCard("4 Applied")</script>
+            <script>createCard("Consultation")</script>
+            <script>createCard("8 Hour Boothing")</script>
+            <script>createCard("Hangout")</script>
 
-                <!-- oGV -->
-                <div class="ranking-item">
-                    <div class="icon"><i class="fa fa-chevron-up"></i></div>
-                    <h3>oGV</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Duaa</a><br/>
-                            <a>Abdallah</a><br/>
-                            <a>Sabrina</a><br/>
-                            <a>Kate</a><br/>
-                            <a>Daniyal</a><br/>
-                        </div>
+            <h2 style="text-align:center;">MARCOM</h2>
+            <script>createCard("Book 4 meetings")</script>
+            <script>createCard("10 Classroom Talks")</script>
+            <script>createCard("15 Classroom Talks")</script>
+            <script>createCard("4 Hour Boothing Each Member")</script>
+            <script>createCard("Finalize January Info Session")</script>
+            <script>createCard("4 Hour Boothing")</script>
 
-                        <div class="flex:1;">
-                            <a>35pts</a><br/>
-                            <a>26pts</a><br/>
-                            <a>10pts</a><br/>
-                            <a>3pts</a><br/>
-                            <a>0pts</a><br/>
-                        </div>
-                    </div>
-                </div>
+            <h2 style="text-align:center;">TM</h2>
+            <script>createCard("Meeting with TLs twice + update trackers")</script>
+            <script>createCard("Meeting with TLs twice + update trackers")</script>
+            <script>createCard("Meeting with TLs twice + update trackers")</script>
+            <script>createCard("Meeting with TLs twice + update trackers")</script>
+            <script>createCard("Get Every Members to Fill PDP")</script>
+            <script>createCard("Event (Volunteer Session)")</script>
 
-                <!-- oGT -->
-                <div class="ranking-item">
-                    <div class="icon"><i class="fa fa-chevron-circle-up"></i></div>
-                    <h3>oGT</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Chelsey</a><br/>
-                            <a>Fareedah</a><br/>
-                            <a>Mia</a><br/>
-                            <a>Abdallah</a><br/>
-                            <a>Deek</a><br/>
-                            <a>Lucky</a><br/>
-                        </div>
+            <h2 style="text-align:center;">Finance</h2>
+            <script>createCard("Sales Meeting Pitch")</script>
+            <script>createCard("MC IXP Fund")</script>
+            <script>createCard("MC IXP Fund")</script>
+            <script>createCard("Instagram Takeover")</script>
+            <script>createCard("R&R")</script>
+            <script>createCard("1 Sponsorship Each Member (Applied)")</script>
+        </div>
 
-                        <div class="flex:1;">
-                            <a>16pts</a><br/>
-                            <a>13pts</a><br/>
-                            <a>11pts</a><br/>
-                            <a>11pts</a><br/>
-                            <a>5pts</a><br/>
-                            <a>0pts</a><br/>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- iGT -->
-                <div class="ranking-item">
-                    <div class="icon"><i class="fa fa-chevron-circle-down"></i></div>
-                    <h3>iGT</h3>
-                    <hr class="center" />
-                    <!-- <h4>Ceo &amp; Founder</h4> -->
-                    <div style="display:flex; flex-direction: row; justify-content:center;">
-                        <div class="flex:1;" style="margin-right: 100px;">
-                            <a>Darshan</a><br/>
-                            <a>Jacqueline</a><br/>
-                            <a>Rachel</a><br/>
-                            <a>George</a><br/>
-                            <a>Jessa</a><br/>
-                            <a>Rhythm</a><br/>
-                            <a>Tomiwa</a><br/>
-                        </div>
-
-                        <div class="flex:1;">
-                            <a>100pts</a><br/>
-                            <a>100pts</a><br/>
-                            <a>60pts</a><br/>
-                            <a>60pts</a><br/>
-                            <a>40pts</a><br/>
-                            <a>10pts</a><br/>
-                            <a>0pts</a><br/>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="bingo-error">
+            <h4 style="color: red;">Please use your laptop or a tablet that has a bigger screen to visualize the bingo board.</h4>
+        </div>
 
         </div>
     </section><!-- #rankings -->
@@ -928,10 +839,10 @@
 <!-- Contact Form JavaScript File -->
 <script src="contactform/contactform.js"></script>
 
-
-
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+
+
 
 
 </body>
