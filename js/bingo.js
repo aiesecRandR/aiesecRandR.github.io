@@ -1,6 +1,33 @@
+function showModal(description) {
+    var modal = document.getElementById("bingoModal");
+    modal.style.display = "flex";
 
-function createCard(task) {
-    document.write(`<div class="flip-card">
+    var modalDescription = document.getElementById("bingoModalDescription");
+    modalDescription.innerHTML = description;
+
+    setTimeout(() => {
+        modal.style.opacity = 1;
+    }, 50);
+}
+
+function hideModal() {
+    var modal = document.getElementById("bingoModal");
+    modal.style.opacity = 0;
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 300);
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+var modal = document.getElementById("bingoModal");
+  if (event.target == modal) {
+    hideModal();
+  }
+}
+
+function createCard(task, description) {
+    document.write(`<div class="flip-card" onclick='showModal("${description}")'>
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <p style="text-align: center;">${task}</p>

@@ -767,6 +767,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #50d8af;
 }
 
+/* Member of the month Section
+--------------------------------*/
+.member-month {
+    display: block;
+    margin: 0 auto;
+}
+
+#memberMonth p {
+    margin-top: 25px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
 /* Our Portfolio Section
 --------------------------------*/
 #portfolio {

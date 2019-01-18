@@ -144,6 +144,32 @@
     </section><!-- #about -->
 
     <!--==========================
+      Member of the Month Section
+    ============================-->
+    <section id="memberMonth" class="wow fadeInUp">
+        <div class="container">
+            <div class="section-header">
+                <h2>Member of the Month</h2>
+            </div>
+
+            <h5>
+                The star of the month for AIESEC Manitoba is:
+            </h5>
+
+            <img class="member-month" src="img/member-month.jpg" height="35%" width="35%"/>
+            <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                To be known in the next LCM
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+
+
+        </div>
+    </section><!-- #member of the months -->
+
+
+
+    <!--==========================
       Rankings Section
     ============================-->
 
@@ -159,7 +185,19 @@
             a section of the image when you complete the task for that
             particular section.
             <!-- <img src="img/quote-sign-right.png" class="quote-sign-right" alt=""> -->
-        </h5>
+            </h5>
+            <br/>
+            <p>
+                Click on a card to see more descriptions regarding the task.
+            </p>
+
+        <!-- The bingo modal to show the description when clicked on a card/task -->
+        <div id="bingoModal" class="modal" >
+            <div id="bingoModalContent" class="modal-content">
+                <span onclick="hideModal()" class="close">&times;</span>
+                <p id="bingoModalDescription" class="bingo-modal-description">Description</p>
+            </div>
+        </div>
 
         <div class="bingo">
             <!-- first row -->
@@ -173,52 +211,52 @@
 
 
             <h2 style="text-align:center;">IGT</h2>
-            <script>createCard("10 Sales Meeting")</script>
-            <script>createCard("10 Classroom Talks")</script>
-            <script>createCard("10 Classroom Talks")</script>
-            <script>createCard("Hangout")</script>
-            <script>createCard("Intern Social")</script>
-            <script>createCard("Social Event")</script>
+            <script>createCard("10 Sales Meeting", "Make 10 Sales Meeting")</script>
+            <script>createCard("10 Classroom Talks", "OGV and IGT collaborate with each other to pitch 10 classroom talks.")</script>
+            <script>createCard("10 Classroom Talks", "OGET and IGT collaborate with each other to pitch 10 classroom talks")</script>
+            <script>createCard("Hangout", "MARCOM and IGT create a hangout together to bond")</script>
+            <script>createCard("Intern Social","TM work together with IGT to create a social/hangout with the interns working here")</script>
+            <script>createCard("Social Event", "Finance collaborate with IGT to create a social event")</script>
 
             <h2 style="text-align:center;">OGV</h2>
-            <script>createCard("10 Hour Boothing")</script>
-            <script>createCard("10 Approvals")</script>
-            <script>createCard("20 Consultations")</script>
-            <script>createCard("10 Hour Boothing")</script>
-            <script>createCard("Hangout")</script>
-            <script>createCard("4 Hour Boothing")</script>
+            <script>createCard("10 Hour Boothing", "IGT collaborate with OGV to do 10 hours of boothing. If a person from OGV and IGT is doing boothing at the same time, their points stack")</script>
+            <script>createCard("10 Approvals", "OGV make 10 approvals")</script>
+            <script>createCard("20 Consultations", "OGV collaborate with OGET to make 20 consultations. If a person from OGV made 1 consultation and a person from OGET made 1 consultation, that counts as 2")</script>
+            <script>createCard("10 Hour Boothing", "OGV collaborate with MARCOM to make 10 hours of boothing. Points do stack if they are boothing at the same time")</script>
+            <script>createCard("Hangout", "OGV and TM hangout together to bond")</script>
+            <script>createCard("4 Hour Boothing", "OGV collaborate with FINANCE for 4 hours of boothing, points to stack if multiple people from OGV and FINANCE are boothing at the same time")</script>
 
             <h2 style="text-align:center;">OGET</h2>
-            <script>createCard("Training & Simulation")</script>
-            <script>createCard("10 Hour Boothing")</script>
-            <script>createCard("4 Applied")</script>
-            <script>createCard("Consultation")</script>
-            <script>createCard("8 Hour Boothing")</script>
-            <script>createCard("Hangout")</script>
+            <script>createCard("Training & Simulation", "OGET collaborate with IGT to host a training and simulation for members to learn the internal tasks of OGET and IGT")</script>
+            <script>createCard("10 Hour Boothing", "OGET collaborate with OGV to booth 10 hours, points stack if members from OGET and OGV booth together")</script>
+            <script>createCard("4 Applied", "OGET gets 4 applied leads")</script>
+            <script>createCard("10 Consultation", "OGET collaborate with MARCOM to host 10 consultations for leads")</script>
+            <script>createCard("8 Hour Boothing", "OGET collaborate with TM to get 8 hours of boothing done, points do stack if members from OGET and TM booth together")</script>
+            <script>createCard("Hangout", "OGET hangout with FINANCE for bonding")</script>
 
             <h2 style="text-align:center;">MARCOM</h2>
-            <script>createCard("Book 4 meetings")</script>
-            <script>createCard("10 Classroom Talks")</script>
-            <script>createCard("15 Classroom Talks")</script>
-            <script>createCard("4 Hour Boothing Each Member")</script>
-            <script>createCard("Finalize January Info Session")</script>
-            <script>createCard("4 Hour Boothing")</script>
+            <script>createCard("Book 4 meetings", "MARCOM collaborate with IGT to book 4 meetings with companies")</script>
+            <script>createCard("10 Classroom Talks", "MARCOM collaborate with OGV to pitch 10 classroom talks")</script>
+            <script>createCard("15 Classroom Talks", "MARCOM collaborate with OGET to pitch 15 classroom talks")</script>
+            <script>createCard("4 Hour Boothing Each Member", "Each member in MARCOM has to booth at least 4 hours")</script>
+            <script>createCard("Finalize January Info Session", "MARCOM collaborate with TM to create and finalize the info session(To let leads know more about what AIESEC does) for January")</script>
+            <script>createCard("4 Hour Boothing", "MARCOM collaborate with FINANCE for 4 hours of boothing. Points do stack if members from MARCOM or FINANCE booth together")</script>
 
             <h2 style="text-align:center;">TM</h2>
-            <script>createCard("Meeting with TLs twice + update trackers")</script>
-            <script>createCard("Meeting with TLs twice + update trackers")</script>
-            <script>createCard("Meeting with TLs twice + update trackers")</script>
-            <script>createCard("Meeting with TLs twice + update trackers")</script>
-            <script>createCard("Get Every Members to Fill PDP")</script>
-            <script>createCard("Event (Volunteer Session)")</script>
+            <script>createCard("Meeting with TLs twice + update trackers", "TM has to talk with TLs of IGT to get updates for the tracker")</script>
+            <script>createCard("Meeting with TLs twice + update trackers", "TM has to talk with TLs of OGV to get updates for the tracker")</script>
+            <script>createCard("Meeting with TLs twice + update trackers", "TM has to talk with TLs of OGET to get updates for the tracker")</script>
+            <script>createCard("Meeting with TLs twice + update trackers", "TM has to talk with TLs of MARCOM to get updates for the tracker")</script>
+            <script>createCard("Get Every Members to Fill PDP", "TM has to ensure that every member in AIESEC has filled up the Personal Development Plan (PDP)")</script>
+            <script>createCard("Event (Volunteer Session)", "TM collaborate with FINANCE to create a volunteer session event to get AIESEC name out there. An example would be to host an event in high school to let high school students know what opportunities AIESEC can provide")</script>
 
             <h2 style="text-align:center;">Finance</h2>
-            <script>createCard("Sales Meeting Pitch")</script>
-            <script>createCard("MC IXP Fund")</script>
-            <script>createCard("MC IXP Fund")</script>
-            <script>createCard("Instagram Takeover")</script>
-            <script>createCard("R&R")</script>
-            <script>createCard("1 Sponsorship Each Member (Applied)")</script>
+            <script>createCard("Sales Meeting Pitch", "IGT host a sales meeting pitch so that FINANCE members can learn how IGT works")</script>
+            <script>createCard("MC IXP Fund", "FINANCE collaborate with OGV to get IXP Fund from MC")</script>
+            <script>createCard("MC IXP Fund", "FINANCE collaborate with OGET to get IXP Fund from MC")</script>
+            <script>createCard("Instagram Takeover", "FINANCE helps out MARCOM with their instagram to carry out digital marketing for AIESEC")</script>
+            <script>createCard("create R&R event", "FINANCE work together with TM create an R&R event to spice up AIESEC tasks")</script>
+            <script>createCard("1 Sponsorship Each Member (Applied)", "Each member in FINANCE has to apply at least 1 sponsorship")</script>
         </div>
 
         <div class="bingo-error">
@@ -258,12 +296,7 @@
                         <h4 class="title"><a href="">AIESEC Hoodie</a></h4>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="box wow fadeInLeft" style="padding-left: 25px; padding-bottom: 40px;">
-                        <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
-                        <h4 class="title"><a href="">Elevated Conference or Exchange Reimbursement</a></h4>
-                    </div>
-                </div>
+
                 <div class="col-lg-6 col-md-6">
                     <div class="box wow fadeInLeft" style="padding-left: 25px; padding-bottom: 40px;">
                         <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
@@ -401,7 +434,7 @@
 
 
 
-    
+
 
     <!--==========================
       Clients Section
