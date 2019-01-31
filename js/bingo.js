@@ -26,7 +26,23 @@ var modal = document.getElementById("bingoModal");
   }
 }
 
-function createCard(task, description) {
+function createCard(task, description, isDone, pictureURL) {
+    if (isDone) {
+        document.write(`<div class="flip-card" onclick='showModal("${description}")'>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="${pictureURL}" alt="Avatar" style="width:100%; height: 100%">
+            </div>
+            <div class="flip-card-back">
+              <p style="text-align: center; color: black;">${task}</p>
+            </div>
+        </div>
+        </div>`);
+
+        return;
+    }
+
+    // if this task has not been done
     document.write(`<div class="flip-card" onclick='showModal("${description}")'>
       <div class="flip-card-inner">
         <div class="flip-card-front">
